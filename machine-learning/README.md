@@ -46,4 +46,6 @@ This course provides a broad introduction to machine learning, datamining, and s
 
 #### Links
 
+https://www.coursera.org/learn/machine-learning/supplement/d5Pt1/lecture-slides
+
 

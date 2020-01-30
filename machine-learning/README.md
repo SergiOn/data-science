@@ -48,6 +48,8 @@ This course provides a broad introduction to machine learning, datamining, and s
 
 https://www.coursera.org/learn/machine-learning/supplement/d5Pt1/lecture-slides
 
+https://www.coursera.org/learn/machine-learning/exam/QeJ50/linear-regression-with-one-variable
+
 #### Links
 
 

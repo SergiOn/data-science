@@ -60,4 +60,8 @@ https://wiki.octave.org/Octave_for_macOS
 
 https://octave-app.org/Download.html
 
+https://matlabacademy.mathworks.com/
+
+https://www.coursera.org/learn/machine-learning/supplement/Mlf3e/more-octave-matlab-resources
+
 

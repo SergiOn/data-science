@@ -50,6 +50,14 @@ https://www.coursera.org/learn/machine-learning/supplement/d5Pt1/lecture-slides
 
 https://www.coursera.org/learn/machine-learning/exam/QeJ50/linear-regression-with-one-variable
 
+https://www.coursera.org/learn/machine-learning/supplement/xRMqw/lecture-slides
+
 #### Links
+
+https://www.gnu.org/software/octave/#install
+
+https://wiki.octave.org/Octave_for_macOS
+
+https://octave-app.org/Download.html
 
 

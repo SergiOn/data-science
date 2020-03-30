@@ -64,4 +64,8 @@ https://matlabacademy.mathworks.com/
 
 https://www.coursera.org/learn/machine-learning/supplement/Mlf3e/more-octave-matlab-resources
 
+https://www.mathworks.com/help/matlab/math/array-indexing.html
+
+https://www.mathworks.com/company/newsletters/articles/matrix-indexing-in-matlab.html
+
 

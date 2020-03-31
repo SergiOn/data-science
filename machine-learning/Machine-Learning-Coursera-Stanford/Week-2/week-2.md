@@ -12,3 +12,7 @@ https://www.mathworks.com/help/matlab/ref/mean.html
 
 https://www.mathworks.com/help/matlab/ref/std.html
 
+https://www.mathworks.com/help/symbolic/pinv.html
+
+https://www.mathworks.com/help/matlab/ref/transpose.html
+

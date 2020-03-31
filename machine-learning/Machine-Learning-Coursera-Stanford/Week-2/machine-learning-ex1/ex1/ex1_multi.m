@@ -113,6 +113,9 @@ price = [1, priceXnormalized] * theta;
 fprintf(['Predicted price of a 1650 sq-ft, 3 br house ' ...
          '(using gradient descent):\n $%f\n'], price);
 
+fprintf(['Predicted price for x = [2104 3] should be y = 399900 ' ...
+         '(using gradient descent):\n $%f\n'], [1, 0.1300, -0.2237] * theta);
+
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 
@@ -150,11 +153,13 @@ fprintf('\n');
 
 % Estimate the price of a 1650 sq-ft, 3 br house
 % ====================== YOUR CODE HERE ======================
-price = 0; % You should change this
-
+% price = 0; % You should change this
+price = [1, 1650, 3] * theta;
 
 % ============================================================
 
 fprintf(['Predicted price of a 1650 sq-ft, 3 br house ' ...
          '(using normal equations):\n $%f\n'], price);
 
+fprintf(['Predicted price for x = [2104 3] should be y = 399900 ' ...
+         '(using normal equations):\n $%f\n'], [1, 2104 3] * theta);

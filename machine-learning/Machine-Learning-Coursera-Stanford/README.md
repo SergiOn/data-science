@@ -52,3 +52,7 @@ https://www.mathworks.com/matlabcentral/answers/302984-how-to-use-the-constant-e
 
 https://www.mathworks.com/company/newsletters/articles/matrix-indexing-in-matlab.html
 
+https://www.mathworks.com/help/matlab/ref/power.html
+
+https://www.mathworks.com/help/matlab/math/creating-and-concatenating-matrices.html
+

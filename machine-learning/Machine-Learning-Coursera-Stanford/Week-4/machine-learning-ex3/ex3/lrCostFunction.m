@@ -9,7 +9,7 @@ function [J, grad] = lrCostFunction(theta, X, y, lambda)
 m = length(y); % number of training examples
 
 % You need to return the following variables correctly 
-J = 0;
+% J = 0;
 grad = zeros(size(theta));
 
 % ====================== YOUR CODE HERE ======================
@@ -36,13 +36,20 @@ grad = zeros(size(theta));
 %           grad = grad + YOUR_CODE_HERE (using the temp variable)
 %
 
+coef = 1 / m;
+h0x = sigmoid(X * theta);
+tempTheta = theta;
+tempTheta(1) = 0;
 
 
+calcCost = -y .* log(h0x) - (1 - y) .* log(1 - h0x);
+
+J = coef * sum(calcCost) + (lambda / (2 * m)) * sum(power(tempTheta, 2));
 
 
+calcGrad = X' * (h0x - y);
 
-
-
+grad = coef * calcGrad + (lambda / m) * tempTheta;
 
 
 % =============================================================

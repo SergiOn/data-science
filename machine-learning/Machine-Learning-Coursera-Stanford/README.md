@@ -58,3 +58,5 @@ https://www.mathworks.com/help/matlab/ref/power.html
 
 https://www.mathworks.com/help/matlab/math/creating-and-concatenating-matrices.html
 
+https://www.mathworks.com/help/matlab/learn_matlab/matrices-and-arrays.html
+

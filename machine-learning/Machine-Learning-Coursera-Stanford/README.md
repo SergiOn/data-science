@@ -26,6 +26,8 @@ https://www.coursera.org/learn/machine-learning/supplement/CUz2O/lecture-slides
 
 https://www.coursera.org/learn/machine-learning/supplement/jtFHI/lecture-slides
 
+https://www.coursera.org/learn/machine-learning/supplement/FklyY/lecture-slides
+
 #### Links
 
 https://www.gnu.org/software/octave/#install

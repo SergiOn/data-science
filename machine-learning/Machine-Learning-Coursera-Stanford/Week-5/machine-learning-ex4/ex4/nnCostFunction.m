@@ -70,13 +70,18 @@ z3 = a2 * Theta2.';
 a3 = sigmoid(z3);
 h0x = a3;
 
-
 yk = eye(num_labels);
 yk = yk(y, :);
 
-coef = 1 / m;
-delta = -yk .* log(h0x) - (1 - yk) .* log(1 - h0x);
-J = coef * sum(delta, 'all');
+costCoef = 1 / m;
+costDelta = -yk .* log(h0x) - (1 - yk) .* log(1 - h0x);
+
+regCoef = lambda / (2 * m);
+regDeltaTheta1 = Theta1(:, 2:end).^2;
+regDeltaTheta2 = Theta2(:, 2:end).^2;
+regDeltaSum = sum(regDeltaTheta1, 'all') + sum(regDeltaTheta2, 'all');
+
+J = costCoef * sum(costDelta, 'all') + regCoef * regDeltaSum;
 
 % -------------------------------------------------------------
 

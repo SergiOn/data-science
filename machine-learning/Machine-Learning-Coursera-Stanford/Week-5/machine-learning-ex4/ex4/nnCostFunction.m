@@ -1,4 +1,4 @@
-function [J grad] = nnCostFunction(nn_params, ...
+function [J, grad] = nnCostFunction(nn_params, ...
                                    input_layer_size, ...
                                    hidden_layer_size, ...
                                    num_labels, ...
@@ -24,9 +24,9 @@ Theta2 = reshape(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))):en
 
 % Setup some useful variables
 m = size(X, 1);
-         
+
 % You need to return the following variables correctly 
-J = 0;
+% J = 0;
 Theta1_grad = zeros(size(Theta1));
 Theta2_grad = zeros(size(Theta2));
 
@@ -62,23 +62,21 @@ Theta2_grad = zeros(size(Theta2));
 %               and Theta2_grad from Part 2.
 %
 
+a1 = [ones(m, 1) X];
+z2 = a1 * Theta1.';
+a2temp = sigmoid(z2);
+a2 = [ones(m, 1) a2temp];
+z3 = a2 * Theta2.';
+a3 = sigmoid(z3);
+h0x = a3;
 
 
+yk = eye(num_labels);
+yk = yk(y, :);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+coef = 1 / m;
+delta = -yk .* log(h0x) - (1 - yk) .* log(1 - h0x);
+J = coef * sum(delta, 'all');
 
 % -------------------------------------------------------------
 

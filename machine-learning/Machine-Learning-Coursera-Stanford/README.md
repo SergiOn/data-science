@@ -62,3 +62,7 @@ https://www.mathworks.com/help/matlab/math/creating-and-concatenating-matrices.h
 
 https://www.mathworks.com/help/matlab/learn_matlab/matrices-and-arrays.html
 
+https://www.mathworks.com/help/matlab/ref/eye.html
+
+https://www.mathworks.com/help/matlab/ref/sum.html
+

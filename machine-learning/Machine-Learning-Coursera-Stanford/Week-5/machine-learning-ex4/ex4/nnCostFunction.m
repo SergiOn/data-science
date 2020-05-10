@@ -64,8 +64,8 @@ Theta2_grad = zeros(size(Theta2));
 
 a1 = [ones(m, 1) X];
 z2 = a1 * Theta1.';
-a2temp = sigmoid(z2);
-a2 = [ones(m, 1) a2temp];
+a2_temp = sigmoid(z2);
+a2 = [ones(m, 1) a2_temp];
 z3 = a2 * Theta2.';
 a3 = sigmoid(z3);
 h0x = a3;
@@ -73,17 +73,32 @@ h0x = a3;
 yk = eye(num_labels);
 yk = yk(y, :);
 
-costCoef = 1 / m;
-costDelta = -yk .* log(h0x) - (1 - yk) .* log(1 - h0x);
+coef = 1 / m;
+calc_cost = -yk .* log(h0x) - (1 - yk) .* log(1 - h0x);
+calc_cost_sum = sum(calc_cost, 'all');
 
-regCoef = lambda / (2 * m);
-regDeltaTheta1 = Theta1(:, 2:end).^2;
-regDeltaTheta2 = Theta2(:, 2:end).^2;
-regDeltaSum = sum(regDeltaTheta1, 'all') + sum(regDeltaTheta2, 'all');
+coef_reg = lambda / (2 * m);
+calc_reg_Theta1 = Theta1(:, 2:end).^2;
+calc_reg_Theta2 = Theta2(:, 2:end).^2;
+calc_reg_sum = sum(calc_reg_Theta1, 'all') + sum(calc_reg_Theta2, 'all');
 
-J = costCoef * sum(costDelta, 'all') + regCoef * regDeltaSum;
+J = coef * calc_cost_sum + coef_reg * calc_reg_sum;
 
 % -------------------------------------------------------------
+
+delta3 = a3 - yk;
+delta2_temp = delta3 * Theta2;
+delta2 = delta2_temp(:, 2:end) .* sigmoidGradient(z2);
+
+Delta2 = delta3.' * a2;
+Delta1 = delta2.' * a1;
+
+D2 = coef * Delta2;
+D1 = coef * Delta1;
+
+Theta1_grad = D1;
+Theta2_grad = D2;
+
 
 % =========================================================================
 

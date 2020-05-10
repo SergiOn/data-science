@@ -27,8 +27,8 @@ m = size(X, 1);
 
 % You need to return the following variables correctly 
 % J = 0;
-Theta1_grad = zeros(size(Theta1));
-Theta2_grad = zeros(size(Theta2));
+% Theta1_grad = zeros(size(Theta1));
+% Theta2_grad = zeros(size(Theta2));
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: You should complete the code by working through the
@@ -62,6 +62,8 @@ Theta2_grad = zeros(size(Theta2));
 %               and Theta2_grad from Part 2.
 %
 
+% Part 1: CostFunction
+
 a1 = [ones(m, 1) X];
 z2 = a1 * Theta1.';
 a2_temp = sigmoid(z2);
@@ -86,6 +88,8 @@ J = coef * calc_cost_sum + coef_reg * calc_reg_sum;
 
 % -------------------------------------------------------------
 
+% Part 2: Backpropagation algorithm
+
 delta3 = a3 - yk;
 delta2_temp = delta3 * Theta2;
 delta2 = delta2_temp(:, 2:end) .* sigmoidGradient(z2);
@@ -96,8 +100,16 @@ Delta1 = delta2.' * a1;
 D2 = coef * Delta2;
 D1 = coef * Delta1;
 
-Theta1_grad = D1;
-Theta2_grad = D2;
+% Theta1_temp = Theta1;
+% Theta1_temp(:, 1) = 0;
+% Theta2_temp = Theta2;
+% Theta2_temp(:, 1) = 0;
+
+Theta1_temp = [zeros(size(Theta1, 1), 1) Theta1(:, 2:end)];
+Theta2_temp = [zeros(size(Theta2, 1), 1) Theta2(:, 2:end)];
+
+Theta1_grad = D1 + lambda * coef .* Theta1_temp;
+Theta2_grad = D2 + lambda * coef .* Theta2_temp;
 
 
 % =========================================================================

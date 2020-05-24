@@ -33,3 +33,20 @@ One way to break down our dataset into the three sets is:
 * Cross validation set: 20%
 * Test set: 20%
 
+### Bias vs. Variance
+
+#### Regularization and Bias/Variance
+
+In the figure above, we see that as λ increases, our fit becomes more rigid.
+On the other hand, as λ approaches 0, we tend to over overfit the data.
+So how do we choose our parameter λ to get it 'just right' ?
+In order to choose the model and the regularization term λ, we need to:
+
+* Create a list of lambdas (i.e. λ∈{0,0.01,0.02,0.04,0.08,0.16,0.32,0.64,1.28,2.56,5.12,10.24});
+* Create a set of models with different degrees or any other variants.
+* Iterate through the λs and for each λ go through all the models to learn some Θ.
+* Compute the cross validation error using the learned Θ (computed with λ) on the J_CV(Θ) without regularization or λ = 0.
+* Select the best combo that produces the lowest error on the cross validation set.
+* Using the best combo Θ and λ, apply it on J_test(Θ) to see if it has a good generalization of the problem.
+
+

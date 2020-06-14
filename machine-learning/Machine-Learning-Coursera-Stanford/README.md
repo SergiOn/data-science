@@ -85,3 +85,5 @@ https://www.mathworks.com/help/matlab/ref/sum.html
 
 https://www.mathworks.com/help/matlab/ref/zeros.html
 
+https://www.mathworks.com/help/matlab/ref/exp.html
+

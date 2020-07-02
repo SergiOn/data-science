@@ -87,3 +87,7 @@ https://www.mathworks.com/help/matlab/ref/zeros.html
 
 https://www.mathworks.com/help/matlab/ref/exp.html
 
+https://www.mathworks.com/help/matlab/ref/norm.html
+
+https://www.mathworks.com/help/matlab/ref/nthroot.html
+

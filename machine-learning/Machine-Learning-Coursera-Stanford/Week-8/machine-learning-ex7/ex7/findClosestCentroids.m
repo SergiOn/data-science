@@ -21,9 +21,34 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
+m = size(X, 1);
 
+% https://www.mathworks.com/help/matlab/ref/norm.html
 
+% for i = 1:m
+%     X_item = X(i, :);
+%     minusCols = centroids - X_item;
+%     powerCols = minusCols.^2;
+%     sumCols = sum((powerCols), 2);
+%     root = nthroot(sumCols, 2);
+%     [minValue, closestIndex] = min(root);
+%     idx(i) = closestIndex;
+% end
 
+for i = 1:m
+
+    compare = zeros(K, 1);
+    X_item = X(i, :);
+
+    for j = 1:K
+        centroids_item = centroids(j, :);
+        normalized = norm(X_item - centroids_item);
+        compare(j) = normalized;
+    end
+    
+    [minValue, closestIndex] = min(compare);
+    idx(i) = closestIndex;
+end
 
 
 

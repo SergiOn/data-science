@@ -43,7 +43,7 @@ for i = 1:m
     for j = 1:K
         centroids_item = centroids(j, :);
         normalized = norm(X_item - centroids_item);
-        compare(j) = normalized;
+        compare(j) = normalized.^2;
     end
     
     [minValue, closestIndex] = min(compare);

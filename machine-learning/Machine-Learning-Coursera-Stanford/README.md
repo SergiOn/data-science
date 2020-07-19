@@ -91,3 +91,5 @@ https://www.mathworks.com/help/matlab/ref/norm.html
 
 https://www.mathworks.com/help/matlab/ref/nthroot.html
 
+https://www.mathworks.com/help/matlab/ref/var.html
+

@@ -14,8 +14,8 @@ Theta = reshape(params(num_movies*num_features+1:end), ...
             
 % You need to return the following values correctly
 % J = 0;
-X_grad = zeros(size(X));
-Theta_grad = zeros(size(Theta));
+% X_grad = zeros(size(X));
+% Theta_grad = zeros(size(Theta));
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Compute the cost function and gradient for collaborative
@@ -45,17 +45,9 @@ diff = H - Y;
 diff_rated = R .* diff;
 J = (1 / 2) * sum(diff_rated.^2, 'all');
 
+X_grad = diff_rated * Theta;
 
-
-
-
-
-
-
-
-
-
-
+Theta_grad = diff_rated.' * X;
 
 
 % =============================================================

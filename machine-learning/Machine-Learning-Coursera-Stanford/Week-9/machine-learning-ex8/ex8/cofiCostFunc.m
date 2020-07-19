@@ -43,7 +43,7 @@ Theta = reshape(params(num_movies*num_features+1:end), ...
 H = X * Theta.';
 diff = H - Y;
 diff_rated = R .* diff;
-J = (1 / 2) * sum(diff_rated.^2, 'all');
+J = (1 / 2) * sum(diff_rated.^2, 'all') + (lambda / 2) * sum(Theta.^2, 'all') + (lambda / 2) * sum(X.^2, 'all');
 
 X_grad = diff_rated * Theta;
 

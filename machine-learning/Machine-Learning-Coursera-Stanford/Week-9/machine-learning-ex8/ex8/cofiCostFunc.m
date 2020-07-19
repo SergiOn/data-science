@@ -45,9 +45,9 @@ diff = H - Y;
 diff_rated = R .* diff;
 J = (1 / 2) * sum(diff_rated.^2, 'all') + (lambda / 2) * sum(Theta.^2, 'all') + (lambda / 2) * sum(X.^2, 'all');
 
-X_grad = diff_rated * Theta;
+X_grad = diff_rated * Theta + lambda * X;
 
-Theta_grad = diff_rated.' * X;
+Theta_grad = diff_rated.' * X + lambda * Theta;
 
 
 % =============================================================

@@ -74,4 +74,8 @@ https://www.udemy.com/course/machinelearning
 
 Learn to create Machine Learning Algorithms in Python and R from two Data Science experts. Code templates included.
 
+#### Links
+
+http://superdatascience.com/2
+
 

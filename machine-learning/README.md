@@ -66,3 +66,12 @@ so that you'll also learn how to apply learning algorithms to building smart rob
 text understanding (web search, anti-spam), computer vision, medical informatics, audio, database mining, and other areas.
 
 
+## Machine Learning A-Z™: Hands-On Python & R In Data Science
+
+https://www.udemy.com/course/machinelearning
+
+#### About
+
+Learn to create Machine Learning Algorithms in Python and R from two Data Science experts. Code templates included.
+
+

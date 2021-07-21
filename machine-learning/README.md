@@ -82,4 +82,6 @@ https://sdsclub.com/learning-paths/machine-learning-track
 
 https://www.dropbox.com/s/biqmldsnmtp8g8s/OU2-Difference-Between-ML-DL-AI.pdf?dl=0
 
+https://www.dropbox.com/s/py3ns8ltraoexfi/Youtube%20-%20Regression%20-%20Video%20Exp%20%232.mov?dl=0
+
 

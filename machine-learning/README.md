@@ -78,4 +78,6 @@ Learn to create Machine Learning Algorithms in Python and R from two Data Scienc
 
 http://superdatascience.com/2
 
+https://sdsclub.com/learning-paths/machine-learning-track
+
 

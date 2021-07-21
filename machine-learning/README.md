@@ -80,4 +80,6 @@ http://superdatascience.com/2
 
 https://sdsclub.com/learning-paths/machine-learning-track
 
+https://www.dropbox.com/s/biqmldsnmtp8g8s/OU2-Difference-Between-ML-DL-AI.pdf?dl=0
+
 

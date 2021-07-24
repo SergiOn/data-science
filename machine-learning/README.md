@@ -84,4 +84,6 @@ https://www.dropbox.com/s/biqmldsnmtp8g8s/OU2-Difference-Between-ML-DL-AI.pdf?dl
 
 https://www.dropbox.com/s/py3ns8ltraoexfi/Youtube%20-%20Regression%20-%20Video%20Exp%20%232.mov?dl=0
 
+https://drive.google.com/drive/folders/1OFNnrHRZPZ3unWdErjLHod8Ibv2FfG1d?usp=sharing
+
 

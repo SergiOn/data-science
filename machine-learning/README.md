@@ -86,4 +86,8 @@ https://www.dropbox.com/s/py3ns8ltraoexfi/Youtube%20-%20Regression%20-%20Video%2
 
 https://drive.google.com/drive/folders/1OFNnrHRZPZ3unWdErjLHod8Ibv2FfG1d?usp=sharing
 
+https://www.superdatascience.com/pages/welcome-to-faqbot
+
+https://datascience.stackexchange.com/
+
 
